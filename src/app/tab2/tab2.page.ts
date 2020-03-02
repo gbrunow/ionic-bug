@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor() { }
 
+  doRefresh(event) {
+    setTimeout(() => {
+      event.target.complete();
+    }, 500);
+  }
 }
